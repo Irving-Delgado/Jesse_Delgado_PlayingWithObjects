@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript">
+		var users = [{name: "Michael", age:37}, {name: "John", age:30}, {name: "David", age:27}];
+		console.log("#1");
+		console.log(users[1].name);
+		console.log("#2");
+		console.log(users[0].name);
+		console.log("#3");
+		for(var i=0; i<users.length; i++){
+  			console.log(users[i].name+" - "+users[i].age);
+		}
+		</script>
+	</head>
+	<body>
+		<ol>
+			<li>Right click.</li>
+			<li>Click on inspect</li>
+			<li>On the top of the window pick Console</li>
+			<li>The console work should be there.</li>
+		</ol>
+		<p>How would you print/log John's age?</p>
+		<script type="text/javascript">
+			document.write(users[1].name);
+		</script>
+		<p>How would you print/log the name of the first object?</p>
+		<script type="text/javascript">
+			document.write(users[0].name);
+		</script>
+		<p>How would you print/log the name and age of each user using a for loop?</p>
+		<script type="text/javascript">
+			for(var i=0; i<users.length; i++){
+  				document.write(users[i].name+" - "+ users[i].age+" ");
+			}
+		</script>
+	</body>
+</html>
